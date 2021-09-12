@@ -1,17 +1,17 @@
 {
-  "name": "LCARS",
+  "name": "LCARS AppDaemon Stylus",
   "version": "0.1.0",
   "description": "LCARS website framework",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joernweissenborn/lcars.git"
+    "url": "https://github.com/DavidMikeSimon/lcars_appdaemon_stylus.git"
   },
   "author": "Joern Weissenborn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joernweissenborn/lcars/issues"
+    "url": "https://github.com/DavidMikeSimon/lcars_appdaemon_stylus/issues"
   },
-  "homepage": "https://github.com/joernweissenborn/lcars",
+  "homepage": "https://github.com/DavidMikeSimon/lcars_appdaemon_stylus",
   "devDependencies": {
     "gulp-concat": "^2.2.0",
     "gulp-load-plugins": "^0.5.0",
