@@ -12,6 +12,9 @@
     "url": "https://github.com/DavidMikeSimon/lcars_appdaemon_stylus/issues"
   },
   "homepage": "https://github.com/DavidMikeSimon/lcars_appdaemon_stylus",
+  "scripts": {
+    "build": "stylus lcars/stylus/dashboard.styl -o lcars/"
+  },
   "devDependencies": {
     "gulp-concat": "^2.2.0",
     "gulp-load-plugins": "^0.5.0",

@@ -1,5 +1,61 @@
 head_includes:
   - <! head tags go here ->
 
-body_includes:
-  - <! body tags go here ->
+body_includes: 
+  - >
+    <script>
+    setTimeout(() => {
+      const container = document.getElementById('container');
+      container.classList.add('lcars-app-container');
+
+      const innerContainer = document.createElement('div');
+      innerContainer.id = "inner-container";
+      container.prepend(innerContainer);
+
+      const gridster = document.getElementsByClassName("gridster")[0];
+      gridster.remove();
+      innerContainer.prepend(gridster);
+
+      const footer = document.createElement('div');
+      footer.id = 'footer';
+      footer.classList.add('lcars-row');
+      footer.innerHTML = `
+        <div class="lcars-elbow left-top lcars-tan-bg"></div>
+        <div class="lcars-bar horizontal both-divider bottom"></div>
+        <div class="lcars-bar horizontal right-end left-divider bottom"></div>
+      `;
+      container.prepend(footer);
+
+      const leftMenu = document.createElement('div');
+      leftMenu.id = 'left-menu';
+      leftMenu.classList.add('lcars-column')
+      leftMenu.classList.add('start-space')
+      leftMenu.classList.add('lcars-u-1')
+      leftMenu.innerHTML = `
+        <div class="lcars-bar lcars-u-1"></div>
+      `;
+      container.prepend(leftMenu);
+
+      const header = document.createElement('div');
+      header.classList.add('lcars-row');
+      header.classList.add('header');
+      header.id = 'header';
+      header.innerHTML = `
+        <div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+        <div class="lcars-bar horizontal">
+          <div class="lcars-title right">SINCLAIR</div>
+        </div>
+        <div class="lcars-bar horizontal right-end decorated"></div>
+      `;
+      container.prepend(header);
+
+      for (elem of container.getElementsByClassName('widget')) {
+        elem.classList.add('lcars-element');
+        elem.classList.add('lcars-lilac-bg');
+        elem.classList.add('rounded');
+        elem.classList.add('button');
+      }
+
+      container.classList.remove('dasboard-main'); // Unhide
+    }, 10)
+    </script>
